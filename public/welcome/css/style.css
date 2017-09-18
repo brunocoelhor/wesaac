@@ -1,0 +1,462 @@
+/*############################################################################
+############################# BASIC CONFIG #################################
+############################################################################*/
+body {
+    width: 100%;
+    height: 100%;
+    font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	position: relative;
+	margin: 10px 0;
+}
+
+h1 {
+	font-size: 60px;
+}
+
+h2 {
+	font-size: 48px;
+}
+
+h3 {
+	font-size: 30px;
+}
+
+h4 {
+	font-size: 24px;
+}
+
+h5 {
+	font-size: 18px;
+}
+
+h6 {
+	font-size: 16px;
+}
+
+@media(min-width:767px) {
+    .navbar {
+        padding: 20px 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .top-nav-collapse {
+        padding: 20px;
+    }
+}
+
+/*############################################################################
+########################### END BASIC CONFIG #################################
+############################################################################*/
+
+
+
+/*############################################################################
+############################# NAVBAR CONFIG #################################
+############################################################################*/
+
+.navbar {
+  min-height: 100px;
+  border: 1px solid black;
+}
+
+.navbar-default {
+  background-color: rgba(255,255,255,0);
+  border-color: transparent;
+}
+
+.navbar-brand {
+  padding: 0;
+}
+
+.navbar-brand img{
+  max-height: 65px;
+  /*vertical-align:middle;*/
+}
+
+.navbar-default .navbar-text {
+  color: #ECF3FD;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #ECF3FD;
+  font-size: 20px;
+}
+
+/*DROPDOWN*/
+
+.dropdown-menu {
+  padding: 10px 5px;
+  margin: 2px 0 0;
+  font-size: 18px;
+  background-color: rgba(74,112,135, 1);
+  -webkit-background-clip: padding-box;
+          background-clip: padding-box;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, .15);
+  border-radius: 4px;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+          box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+
+.dropdown-menu > li > a {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: normal;
+  line-height: 1.42857143;
+  color: #ECF3FD;
+  white-space: nowrap;
+}
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+  color: #262626;
+  text-decoration: none;
+  background-color: rgba(255,255,255, 0.6);
+}
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
+  color: #fff;
+  text-decoration: none;
+  background-color: #337ab7;
+  outline: 0;
+}
+
+
+.azul {
+  background-color: #4A7087;
+}
+
+
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  background-color: transparent;
+  border-bottom: 1px solid #ECF3FD;
+  color: #ECF3FD;
+}
+
+.icon-small
+{
+    height:18px;
+    margin:0;
+	padding:0;
+}
+
+.icon-medium
+{
+    height:22px;
+	margin:0;
+	padding:0;
+}
+
+.language{
+  padding-left: 30px;
+}
+
+/*############################################################################
+########################## END NAVBAR CONFIG #################################
+############################################################################*/
+
+
+
+.title{
+  padding-bottom: 30px;
+}
+
+/*############################################################################
+######################## INTRO SECTION CONFIG ################################
+############################################################################*/
+
+
+.intro-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: url(../img/bg.jpeg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+    vertical-align:middle;
+    z-index: -10;
+}
+
+.intro-section:after {
+	content: '';
+	display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.5);
+	background-image:
+		linear-gradient( 45deg, black 15%, transparent 15%, transparent 85%, black 85%, black),
+		linear-gradient( 45deg, black 15%, transparent 15%, transparent 85%, black 85%, black),
+		linear-gradient(-45deg, black 15%, transparent 15%, transparent 85%, black 85%, black),
+		linear-gradient(-45deg, black 15%, transparent 15%, transparent 85%, black 85%, black);
+	background-size: 2px 2px;
+  z-index: -1;
+}
+
+.intro-section:before {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+ }
+
+
+.intro-section img{
+
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.intro-section .img-responsive {
+    margin: 0 auto;
+}
+
+/*############################################################################
+######################## END INTRO SECTION CONFIG ############################
+############################################################################*/
+
+
+/*############################################################################
+######################## ABOUT SECTION CONFIG ################################
+############################################################################*/
+
+.about-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: #FFF;
+    color: #4A7087;
+}
+
+
+/*############################################################################
+######################## END ABOUT SECTION CONFIG ############################
+############################################################################*/
+
+
+/*############################################################################
+######################## EDITIONS SECTION CONFIG #############################
+############################################################################*/
+
+.editions-section {
+    padding-top: 150px;
+    text-align: center;
+    /*background: #ECF3FD;*/
+    background: #f7f7f7;
+    color: #4A7087;
+}
+
+.edition {
+	overflow: hidden;
+	position: relative;
+	min-height: 100px;
+	margin-bottom: 25px;
+	border: 5px solid #fff;
+	border: 1px solid #e4e7e7;
+	border-bottom: 4px solid #e4e7e7;
+	border-radius: 3px;
+}
+
+
+.edition-pic {
+	border: none;
+	border-radius: 0;
+}
+
+.edition-pic img {
+	width: 100%;
+}
+
+.edition-details {
+	display: table;
+	overflow: hidden;
+	position: absolute;
+	bottom: 100%;
+	left: 0;
+	width: 100%;
+	height: 266px;
+	color: #fff;
+	background: rgba(0,0,0,0);
+	text-align: center;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.edition-details h5 {
+	margin: 0;
+	margin-bottom: 5px;
+	color: #fff;
+}
+
+.edition-wrap {
+	text-align: center;
+}
+
+.edition-wrap .edition-box {
+	display: inline-block;
+	float: none;
+	margin-right: -4px;
+	vertical-align: top;
+}
+
+.edition-details-inner {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.edition:hover .edition-details {
+	bottom: 0;
+	background: rgba(0,0,0,0.7);
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.edition-wrap .edition-box {
+  max-width: 300px;
+}
+
+.border-bottom-hover:hover {
+	border-bottom-color: #4A7087;
+}
+
+.edition-wrap .edition-box {
+	margin-left: -4px;
+}
+
+/*############################################################################
+######################## END EDITIONS SECTION CONFIG #########################
+############################################################################*/
+
+
+
+
+/*############################################################################
+######################## CONTACT SECTION CONFIG ##############################
+############################################################################*/
+
+.contact-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: #fff;
+    color: #4A7087;
+}
+
+.contact-form{
+  padding-top: 50px;
+}
+
+/*############################################################################
+######################## END CONTACT SECTION CONFIG ##########################
+############################################################################*/
+
+
+/*############################################################################
+############################# FOOTER CONFIG ##################################
+############################################################################*/
+
+footer {
+  background-color:#0c1a1e; min-height:250px;
+}
+
+.footerleft {
+  margin-top:30px; padding:0 36px;
+}
+.logofooter {
+  margin-bottom:10px; font-size:25px; color:#fff; font-weight:700;
+}
+
+.paddingtop-bottom {
+  margin-top:20px;
+}
+.footer-ul {
+  list-style-type:none;  padding-left:0px; margin-left:2px;
+}
+.footer-ul li {
+  line-height:29px; font-size:12px;
+}
+.footer-ul li a {
+  color:#a0a3a4; transition: color 0.2s linear 0s, background 0.2s linear 0s;
+}
+.footer-ul i {
+  margin-right:10px;
+}
+.footer-ul li a:hover {
+  transition: color 0.2s linear 0s, background 0.2s linear 0s; color:#ff670f;
+}
+
+
+ .copyright {
+   min-height:40px; background-color:#000000;
+ }
+ .copyright p {
+   text-align:right; color:#FFF; padding:10px 0; margin-bottom:0px;
+ }
+ .heading7 {
+   font-size:21px; font-weight:700; color:#d9d6d6; margin-bottom:22px;
+ }
+
+ /*############################################################################
+ ########################## END FOOTER CONFIG #################################
+ ############################################################################*/
+
+ /*############################################################################
+ ############################# MODAL CONFIG ##################################
+ ############################################################################*/
+
+ .material-modal__header {
+   padding: 20px;
+ }
+ .material-modal__content {
+   border-radius: 4px;
+   border: none;
+   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.298039);
+ }
+ .material-modal__body {
+   padding: 20px;
+ }
+ .material-modal__footer {
+   border-top: none;
+   padding: 20px;
+ }
+ .material-modal__close {
+   opacity: 1;
+   font-weight: 400;
+ }
+ .material-modal__header {
+   background-color: #eee;
+ }
+ .material-modal__title,
+ .material-modal__close {
+   color: #ECF3FD;
+ }
+ .material-modal_primary .material-modal__header {
+   background-color: #4A7087;
+ }
+ .material-modal_primary .material-modal__title,
+ .material-modal_primary .material-modal__close {
+   color: #ECF3FD;
+ }

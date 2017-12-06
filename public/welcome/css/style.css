@@ -244,12 +244,25 @@ h6 {
 ############################################################################*/
 
 .about-section {
-    height: 100%;
     padding-top: 150px;
     text-align: center;
-    background: #FFF;
     color: #4A7087;
+    min-height: 100vh;
+    position: relative;
 }
+
+.about-section img{
+  display: block;
+}
+
+
+.about-description{
+  display: block;
+}
+
+
+
+
 
 
 /*############################################################################
@@ -266,7 +279,13 @@ h6 {
     text-align: center;
     /*background: #ECF3FD;*/
     background: #f7f7f7;
+    min-height: 100vh;
+    position: relative;
     color: #4A7087;
+}
+
+.editions-section .title {
+  display: block;
 }
 
 .edition {
@@ -325,6 +344,10 @@ h6 {
 .edition-details-inner {
 	display: table-cell;
 	vertical-align: middle;
+}
+
+.edition-details-inner a{
+  color: #fff;
 }
 
 .edition:hover .edition-details {

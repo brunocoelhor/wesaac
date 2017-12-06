@@ -89,8 +89,8 @@
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->
-            </div>
-            <!-- /.container -->
+            </div><!-- /.container -->
+            
         </nav>
 
         <!-- Intro Section -->
@@ -98,9 +98,6 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
-                        <!-- <h1>Scrolling Nav</h1>
-                        <p><strong>Usage Instructions:</strong> Make sure to include the <code>scrolling-nav.js</code>, <code>jquery.easing.min.js</code>, and <code>scrolling-nav.css</code> files. To make a link smooth scroll to another section on the page, give the link the <code>.page-scroll</code> class and set the link target to a corresponding ID on the page.</p>
-                        <a class="btn btn-default page-scroll" href="#about">Click Me to Scroll Down!</a> -->
                         <img class="img-responsive" src="/welcome/img/logo_intro_1080.png" alt="">
                     </div>
                 </div>
@@ -116,26 +113,25 @@
                     </div>
                 </div>
                 <div class="row">
-                  <div class="col-lg-12">
-                    <div class="col-md-6 col-lg-6">
+
+                    <div class="col-sm-12 col-xs-12 col-md-6 col-lg-6">
                       <img class="img-responsive" src="{!! Storage::disk('local')->url($about->image_about) !!}" alt="">
                     </div>
-                    <div class="col-md-6 col-lg-6 text-justify">
-                      {!! $about->description !!}
+                    <div class="col-sm-12 col-xs-12 col-md-6 col-lg-6 text-justify">
+                      <div class="about-description">
+                        {!! $about->description !!}
+                      </div>                    
                     </div>
-                  </div>
-                </div>
-            </div>
-            <div>
-              <hr>
-            </div>
+  
+                </div><!-- /.row -->
+            </div><!-- /.container -->
         </section>
 
         <!-- Services Section -->
         <section id="editions" class="editions-section">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <h2 class="title">Edições</h2>
                     </div>
                 </div>
@@ -158,8 +154,8 @@
                   </div><!-- .edition -->
                 </div><!-- .edition -->
               @endforeach
-              </div><!-- .edition -->
-            </div>
+              </div><!-- row edition-wrap -->
+            </div><!-- container -->
         </section>
 
         <!-- Contact Section -->
@@ -176,15 +172,15 @@
                     <form class="form-horizontal">
                       <div class="form-group">
                         <label for="exampleInputName2">Nome</label>
-                        <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+                        <input type="text" class="form-control" id="exampleInputName2" placeholder="Digite seu nome">
                       </div>
                       <div class="form-group">
                         <label for="exampleInputEmail2">Email</label>
-                        <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
+                        <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Digite seu e-mail para retornarmos">
                       </div>
                       <div class="form-group ">
                         <label for="exampleInputText">Mensagem</label>
-                       <textarea  class="form-control" placeholder="Descrição"></textarea>
+                       <textarea  class="form-control" placeholder="Digite aqui a sua mensagem"></textarea>
                       </div>
                       <button type="submit" class="btn btn-default">Enviar</button>
                     </form>
@@ -228,7 +224,7 @@
 
         
 
-        <footer>
+{{--         <footer>
           <div class="container">
             <div class="row">
               <div class="col-md-3 col-sm-6 footerleft ">
@@ -265,7 +261,7 @@
               </div>
             </div>
           </div>
-        </footer>
+        </footer> --}}
         <!--footer start from here-->
 
         <div class="copyright">

@@ -49,9 +49,9 @@ class EditionController extends Controller
     public function store(EditionFormRequest $request)
     {
         if ($request->hasFile('image')){
-          $imageName = $request->image->store('public//image');
+          $imageName = $request->image->store('public/images');
         }else{
-          $imageName = '';
+          $imageName = 'noimage.jpg';
         }
 
         // return $request->all();
@@ -108,13 +108,13 @@ class EditionController extends Controller
       $edition = Edition::whereId($id)->firstOrFail();
 
       if ($request->hasFile('image')){
-        $imageName = $request->image->store('public//image');
+        $imageName = $request->image->store('public/images');
       }else{
         $imageName = $edition->image_city;
       }
 
       if ($request->hasFile('proceedings')){
-        $proceedingsName = $request->proceedings->store('public//proceedings');
+        $proceedingsName = $request->proceedings->store('public/proceedings');
       }else{
         $proceedingsName = $edition->proceedings;
       }

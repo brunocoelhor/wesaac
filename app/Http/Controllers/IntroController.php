@@ -34,7 +34,8 @@ class IntroController extends Controller
       $intro = Intro::whereId($id)->firstOrFail();
 
       if ($request->hasFile('image')){
-        $imageName = $request->image->storeAs('public/image', "intro.jpg");
+        // $imageName = $request->image->storeAs('public/image', "intro.jpg");
+        $imageName = $request->image->store('public/images');
       }else{
         $imageName = $intro->image_intro;
       }
@@ -42,7 +43,7 @@ class IntroController extends Controller
       $intro->image_background  = $imageName;
 
       $intro->save();
-      
+
       $intro = Intro::whereId($id)->firstOrFail();
       return view('dashboard.intro.edit', compact('intro'));
 

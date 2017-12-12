@@ -36,7 +36,8 @@ class AboutController extends Controller
       $about = About::whereId($id)->firstOrFail();
 
       if ($request->hasFile('image')){
-		$imageName = $request->image->storeAs('public/image', "about.jpg");
+		// $imageName = $request->image->storeAs('public/images', "about.jpg");
+        $imageName = $request->image->store('public/images');
       }else{
         $imageName = $about->image_city;
       }
@@ -45,7 +46,7 @@ class AboutController extends Controller
       $about->image_about  = $imageName;
 
       $about->save();
-      
+
       $about = About::whereId($id)->firstOrFail();
       return view('dashboard.about.edit', compact('about'));
 

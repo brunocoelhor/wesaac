@@ -8,7 +8,9 @@
         <title>Wesaac</title>
 
         <!-- Bootstrap Core CSS -->
-        <link href="/welcome/css/bootstrap.min.css" rel="stylesheet">
+        {{-- <link href="/welcome/css/bootstrap.min.css" rel="stylesheet"> --}}
+        {{-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"> --}}
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
         <!-- Font Awessome -->
         <link href="/welcome/css/font-awesome.min.css" rel="stylesheet">
@@ -73,7 +75,13 @@
                             <a class="page-scroll" href="#about">Sobre</a>
                         </li>
                         <li>
+                            <a class="page-scroll" href="#ebook">E-book</a>
+                        </li>
+                        {{-- <li>
                             <a class="page-scroll" href="#editions">Edições</a>
+                        </li> --}}
+                        <li>
+                            <a class="page-scroll" href="#apoio">Apoio</a>
                         </li>
                         <li>
                             <a class="page-scroll" href="#contact">Contato</a>
@@ -90,7 +98,7 @@
                 </div>
                 <!-- /.navbar-collapse -->
             </div><!-- /.container -->
-            
+
         </nav>
 
         <!-- Intro Section -->
@@ -120,15 +128,39 @@
                     <div class="col-sm-12 col-xs-12 col-md-6 col-lg-6 text-justify">
                       <div class="about-description">
                         {!! $about->description !!}
-                      </div>                    
+                      </div>
                     </div>
-  
+
                 </div><!-- /.row -->
             </div><!-- /.container -->
         </section>
 
         <!-- Services Section -->
-        <section id="editions" class="editions-section">
+        <section id="ebook" class="editions-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <h2 class="title">E-book</h2>
+                    </div>
+                </div>
+
+              <div class="row">
+                <div class="col-lg-6 col-lg-offset-3 col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-12">
+                    <img class="img-responsive"src="/storage/images/e-book.png" alt="">
+                </div><!-- .edition -->
+              </div><!-- row -->
+              <div class="row">
+                <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12 download-box">
+                    {{-- <button type="button" class="btn btn-lg btn-outline-primary btn-block btn-download">Download</button> --}}
+                    <a href="/storage/ebook/ebook-wesaac.pdf" class="btn btn-lg btn-outline-primary btn-block btn-download"><i class="fa fa-download" aria-hidden="true"></i> Download</a>
+                </div><!-- .edition -->
+              </div><!-- row -->
+
+            </div><!-- container -->
+        </section>
+
+        <!-- Services Section -->
+        {{-- <section id="editions" class="editions-section">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -155,6 +187,69 @@
                 </div><!-- .edition -->
               @endforeach
               </div><!-- row edition-wrap -->
+            </div><!-- container -->
+        </section> --}}
+
+        <!-- Apoio -->
+        <section id="apoio" class="editions-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <h2 class="title">Apoio e Organização</h2>
+                    </div>
+                </div>
+
+              <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12 edition-box">
+                  <div class="img-apoio">
+                      <img class="img-responsive" src="/storage/images/apoio/ifaamas.png" alt="">
+                  </div><!-- .edition -->
+                </div><!-- .edition -->
+                <div class="col-md-3 col-sm-6 col-xs-12 edition-box">
+                  <div class="img-apoio">
+                      <img class="img-responsive" src="/storage/images/apoio/capes.png" alt="">
+                  </div><!-- .edition -->
+                </div><!-- .edition -->
+                <div class="col-md-3 col-sm-6 col-xs-12 edition-box">
+                  <div class="img-apoio">
+                      <img class="img-responsive" src="/storage/images/apoio/furg.png" alt="">
+                  </div><!-- .edition -->
+                </div><!-- .edition -->
+                <div class="col-md-3 col-sm-6 col-xs-12 edition-box">
+                  <div class="img-apoio">
+                      <img class="img-responsive" src="/storage/images/apoio/ce.png" alt="">
+                  </div><!-- .edition -->
+                </div><!-- .edition -->
+              </div><!-- row edition-wrap -->
+
+              <div class="row">
+                <div class="col-md-4 col-sm-6 col-xs-12 edition-box">
+                  <div class="img-apoio">
+                      <img class="img-responsive" src="/storage/images/apoio/poli.png" alt="">
+                  </div><!-- .edition -->
+                </div><!-- .edition -->
+                <div class="col-md-4 col-sm-6 col-xs-12 edition-box">
+                  <div class="img-apoio">
+                      <img class="img-responsive" src="/storage/images/apoio/c3.png" alt="">
+                  </div><!-- .edition -->
+                </div><!-- .edition -->
+                <div class="col-md-4 col-sm-6 col-xs-12 edition-box">
+                  <div class="img-apoio">
+                      <img class="img-responsive" src="/storage/images/apoio/usp.png" alt="">
+                  </div><!-- .edition -->
+                </div><!-- .edition -->
+              </div><!-- row edition-wrap -->
+
+              <div class="row">
+                <h4>Funding Opportunities for Promoting AI Research</h4>
+                <div class="col-md-4 col-md-offset-4 col-sm-6 col-xs-12 edition-box">
+                  <div class="img-apoio">
+                      <img class="img-responsive" src="/storage/images/apoio/ai.png" alt="">
+                  </div><!-- .edition -->
+                </div><!-- .edition -->
+              </div><!-- row edition-wrap -->
+
+
             </div><!-- container -->
         </section>
 
@@ -222,7 +317,7 @@
 
 
 
-        
+
 
 {{--         <footer>
           <div class="container">

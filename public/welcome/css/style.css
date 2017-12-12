@@ -483,3 +483,46 @@ footer {
  .material-modal_primary .material-modal__close {
    color: #ECF3FD;
  }
+
+ .btn-outline-primary {
+   color: #007bff;
+   background-color: transparent;
+   background-image: none;
+   border-color: #007bff;
+   border-radius: 0px;
+ }
+
+ .btn-outline-primary:hover {
+   color: #fff;
+   background-color: #007bff;
+   border-color: #007bff;
+ }
+
+ .btn-outline-primary:focus, .btn-outline-primary.focus {
+   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+ }
+
+ .btn-outline-primary.disabled, .btn-outline-primary:disabled {
+   color: #007bff;
+   background-color: transparent;
+ }
+
+ .btn-outline-primary:not([disabled]):not(.disabled):active, .btn-outline-primary:not([disabled]):not(.disabled).active,
+ .show > .btn-outline-primary.dropdown-toggle {
+   color: #fff;
+   background-color: #007bff;
+   border-color: #007bff;
+   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+ }
+
+.download-box{
+  padding-top: 30px;
+}
+
+textarea {
+    resize: none;
+}
+
+.img-apoio{
+  padding: 10px;
+}
